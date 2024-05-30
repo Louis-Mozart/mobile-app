@@ -1,0 +1,24 @@
+BoxLayout:
+    orientation: 'vertical'
+    padding: 10
+    spacing: 10
+
+    Label:
+        text: 'ML Prediction App'
+        font_size: 32
+
+    TextInput:
+        id: input_value
+        hint_text: 'Enter a value'
+        font_size: 24
+        multiline: False
+
+    Button:
+        text: 'Predict'
+        font_size: 24
+        on_press: app.predict()
+
+    Label:
+        id: prediction_label
+        text: ''
+        font_size: 24
