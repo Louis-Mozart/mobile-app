@@ -1,7 +1,7 @@
 import joblib
 import numpy as np
 
-# Load the trained model
+# Load the trained model: Toy example
 model = joblib.load('height_model.pkl')
 
 def predict(age, gender):
